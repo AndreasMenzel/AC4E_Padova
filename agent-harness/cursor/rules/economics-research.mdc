@@ -1,0 +1,19 @@
+---
+description: Economics research safety and reproducibility standards for the Padova Card-Krueger workshop repository.
+globs: "**/*.md, **/*.py, **/*.tex, **/*.bib, examples/card-krueger/**"
+alwaysApply: false
+---
+
+- Read `AGENTS.md`, the relevant README, and any data source map before editing.
+- Keep changes scoped to the active issue or prompt.
+- Do not inspect, print, or edit `.env`, `secrets/`, `data/raw/`, or
+  `data/private/` without explicit human approval.
+- Do not modify `examples/card-krueger/data/synthetic_fast_food_panel.csv` unless
+  the issue explicitly allows a teaching fixture update.
+- Preserve the synthetic-data caveat for any Card-Krueger result, figure, memo,
+  or slide.
+- Do not invent citations, coefficients, standard errors, sample sizes, or
+  robustness results.
+- Report exact verification commands and outcomes before claiming completion.
+- Route nontrivial empirical changes through `research-sdd`, then ask a read-only
+  reviewer subagent to check the result.
